@@ -3,9 +3,11 @@ import googletrans
 from googletrans import Translator
 from tkinter import ttk, messagebox
 
-
-
-
+class myTranslator:
+    @staticmethod
+    def trans(text, src_lang, dest_lang):
+        text = translator.translate(text, dest=dest_lang, src=source_lang)
+        return text
 
 class translateApp(tk.Tk):
     def __init__(self):
